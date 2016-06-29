@@ -11,4 +11,4 @@ SET CONFIG_PATH=%LOCAL_HOME%\config
 SET CONFIG_FILE=%CONFIG_PATH%\config.properties
 SET LOG_CONFIG_FILE=%CONFIG_PATH%\logback.xml
 ECHO classpath %CLASSPATH%
-java -cp "%CLASSPATH%" -DwebCrawler.config.file=="%CONFIG_FILE%" -Dlogback.configurationFile="%LOG_CONFIG_FILE%" webcrawler.Start
+java -cp "%CLASSPATH%" -DwebCrawler.config.file="%CONFIG_FILE%" -Dlogback.configurationFile="%LOG_CONFIG_FILE%" webcrawler.Start
